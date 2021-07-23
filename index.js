@@ -7,10 +7,10 @@ const app = express();
 
 // Set SF Lightning Out Script
 app.locals.sfLightningOutScript =
-  process.env.SF_L_OUT_SCRIPT || 'https://YOUR_DOMAIN.force.com/lightning/lightning.out.js';
+  process.env.SF_L_OUT_SCRIPT || 'https://mysfpal-dev-ed.my.salesforce.com/lightning/lightning.out.js';
 
 // Set SF Lightning Out Domain
-app.locals.sfDomain = process.env.SF_DOMAIN || 'https://YOUR_DOMAIN.force.com';
+app.locals.sfDomain = process.env.SF_DOMAIN || 'https://mysfpal-dev-ed.my.salesforce.com';
 
 app
   .use(function (req, res, next) {
